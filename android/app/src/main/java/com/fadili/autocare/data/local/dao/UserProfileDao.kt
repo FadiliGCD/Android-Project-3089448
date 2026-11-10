@@ -9,7 +9,7 @@ import com.fadili.autocare.data.local.entity.UserProfileEntity
 import kotlinx.coroutines.flow.Flow
 
 @Dao
-interface UserProfileDao {
+interface    UserProfileDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insert(profile: UserProfileEntity)
